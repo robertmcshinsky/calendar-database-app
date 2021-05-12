@@ -1,0 +1,238 @@
+* {
+  overflow: hidden;
+}
+body {
+  background-color: rgb(139, 139, 139);
+}
+
+.back {
+  overflow: hidden;
+}
+.circle1 {
+  background: linear-gradient(blue, green);
+  height: 400px;
+  width: 400px;
+  position: absolute;
+  z-index: 100;
+  border-radius: 200px;
+}
+
+.circle2 {
+  background: linear-gradient(red, yellow);
+  height: 300px;
+  width: 300px;
+  position: absolute;
+  z-index: 100;
+  border-radius: 200px;
+}
+
+.myMonth {
+  position: absolute;
+  min-height: 550px;
+  width: 40%;
+  background-color: rgba(255, 255, 255, 0.459);
+  z-index: 1000;
+  backdrop-filter: blur(25px);
+}
+
+#date {
+  font-size: 30px;
+  margin-top: 20px;
+}
+.grid-container .monthEl {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.arrow {
+  margin-top: 5%;
+}
+.fullDate {
+  font-size: 15px;
+  position: absolute;
+  margin-top: -2%;
+  margin-left: 6%;
+  width: 80%;
+  text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto;
+}
+
+.grid-item,
+.fullDate {
+  color: white;
+}
+
+form {
+  z-index: 1000;
+}
+button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  height: 50px;
+  border-radius: 10px;
+}
+
+.day {
+  height: 50px;
+  width: 50px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.day:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.arrow:hover,
+.homeButton:hover {
+  color: rgb(61, 61, 61);
+}
+
+.homeButton {
+  display: flex;
+  float: right;
+  width: 20px;
+  font-size: 20px;
+  height: 20px;
+  color: white;
+  float: left;
+}
+
+.todayDate {
+  color: rgb(0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.todayDate:hover {
+  background-color: white;
+}
+
+.homeToToday {
+  float: right;
+  display: flex;
+  margin-top: -20px;
+}
+
+#calendar {
+  width: 40%;
+  margin-left: 30%;
+  position: absolute;
+  margin-top: 100px;
+  border-radius: 20px;
+  border: 1px solid white;
+}
+
+#login,
+#signup,
+.addAppts {
+  width: 20%;
+  margin-left: 5%;
+  position: absolute;
+  border: 1px solid white;
+  color: white;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+#signup {
+  margin-top: 400px;
+}
+
+#login {
+  margin-top: 100px;
+}
+
+#sidebar {
+  width: 20%;
+  border: 1px solid white;
+  margin-left: 75%;
+  margin-top: 100px;
+  max-height: 550px;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  overflow: scroll;
+  overflow-x: hidden;
+  display: none;
+}
+
+.sideform {
+  padding: 15px;
+}
+
+input {
+  border-radius: 10px;
+}
+
+.addAppts {
+  margin-top: 100px;
+  min-height: 550px;
+}
+#createApptContainer {
+  margin-top: 150px;
+  width: 90%;
+  margin-left: 5%;
+  text-align: center;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+}
+#createApptInput {
+  width: 75%;
+  margin-bottom: 20px;
+}
+#createApptDate {
+  width: 75%;
+  margin-bottom: 20px;
+}
+#createApptSubmit {
+  width: 50%;
+  height: 40px;
+  margin-bottom: 20px;
+  border: 1px solid white;
+}
+
+#createApptSubmit:hover {
+  background-color: rgb(90, 90, 90);
+}
+.appt {
+  background-color: black;
+  z-index: 1002;
+  height: 5px;
+  width: 5px;
+  border-radius: 10px;
+  display: flex;
+  margin-left: 45%;
+}
+
+.holiday {
+  background-color: rgb(168, 133, 68);
+}
+.apptEl {
+  width: 80%;
+  margin-left: 10%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 1px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: white;
+  height: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: transparent;
+}
